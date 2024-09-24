@@ -2,8 +2,8 @@
 #define DATASENDER_H_
 
 #include <iostream>
-#include <cstdlib>  // For rand() and srand()
-#include <ctime>    // For time()
+#include <random>
+#include <ctime>
 
 // Function to generate random temperature in the range of 94 - 103
 int generateTemperature();
