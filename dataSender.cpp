@@ -17,7 +17,7 @@ int generatePulseRate() {
 // Function to generate random SpO2 level in the range of 89 - 100
 int generateSpO2() {
     int minSpo2 = 89;  // Percentage
-    int maxSpo2 = 100; 
+    int maxSpo2 = 100;
     return minSpo2 + rand_r() % (maxSpo2 - minSpo2 + 1);
 }
 
