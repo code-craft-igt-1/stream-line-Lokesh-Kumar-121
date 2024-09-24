@@ -1,5 +1,5 @@
-#ifndef DATA_SENDER_H
-#define DATA_SENDER_H
+#ifndef DATASENDER_H_
+#define DATASENDER_H_
 
 #include <iostream>
 #include <cstdlib>  // For rand() and srand()
@@ -17,4 +17,4 @@ int generateSpO2();
 // Function to generate and output 50 lines of data to console
 void generateData();
 
-#endif // DATA_SENDER_H
+#endif  // DATASENDER_H_

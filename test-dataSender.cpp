@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "./dataSender.h"
 
-// Test that the temperature generation function returns a value within the expected range (94 - 103)
+// Test temperature generation function returns a value within the expected range (94 - 103)
 TEST(HealthDataTest, TestGenerateTemperatureRange) {
     srand(static_cast<unsigned int>(time(0)));  // Seed random number generator
     for (int i = 0; i < 5; ++i) {  // Test multiple times to cover randomness
@@ -11,7 +11,7 @@ TEST(HealthDataTest, TestGenerateTemperatureRange) {
     }
 }
 
-// Test that the pulse rate generation function returns a value within the expected range (59 - 100)
+// Test pulse rate generation function returns a value within the expected range (59 - 100)
 TEST(HealthDataTest, TestGeneratePulseRateRange) {
     srand(static_cast<unsigned int>(time(0)));  // Seed random number generator
     for (int i = 0; i < 5; ++i) {  // Test multiple times to cover randomness
@@ -21,7 +21,7 @@ TEST(HealthDataTest, TestGeneratePulseRateRange) {
     }
 }
 
-// Test that the SpO2 generation function returns a value within the expected range (89 - 100)
+// Test SpO2 generation function returns a value within the expected range (89 - 100)
 TEST(HealthDataTest, TestGenerateSpO2Range) {
     srand(static_cast<unsigned int>(time(0)));  // Seed random number generator
     for (int i = 0; i < 5; ++i) {  // Test multiple times to cover randomness
@@ -31,7 +31,7 @@ TEST(HealthDataTest, TestGenerateSpO2Range) {
     }
 }
 
-// Test the generateData function (this will check if the function runs without crashing, we are not testing actual console output here)
+// Test the generateData function
 TEST(HealthDataTest, TestGenerateDataExecution) {
     srand(static_cast<unsigned int>(time(0)));  // Seed random number generator
     ASSERT_NO_THROW(generateData());  // Ensure generateData doesn't throw any exceptions
