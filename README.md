@@ -60,7 +60,7 @@ This section lists the minimum functionality of the Sender and Processor.
 
 ### The Sender
 
-- simulates and sends a set of readings - temperature, pulse rate, SPO2
+- simulates and sends a set of readings - temperature(F), pulse rate(bpm), SPO2(%)
 - sends fifty sets of readings in a stream
 - can either generate values for the parameters, or read from a file
 - uses console output to communicate the parameters.
